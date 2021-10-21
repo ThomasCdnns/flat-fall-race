@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" text="Génération de la carte - Flat Fall Race" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Affichage.ChargementController">
+   <content>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text layoutX="83.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chargement de la partie">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ProgressBar layoutX="80.0" layoutY="161.0" prefHeight="26.0" prefWidth="238.0" />
+            <Text layoutX="36.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Création de la carte en cours, veuillez patienter">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="62.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Je savais pas coder la barre de chargement, m'en voulez pas...)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#3184a4" layoutX="44.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conseil : Pour ne pas mourrir, restez en vie !">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+</TitledPane>

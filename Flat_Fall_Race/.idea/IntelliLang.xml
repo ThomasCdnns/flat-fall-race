@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LanguageInjectionConfiguration">
+    <injection language="JAVA" injector-id="xml">
+      <display-name>Button/@onAction</display-name>
+      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("onAction")).withParent(xmlTag().withLocalName(string().equalTo("Button")).withNamespace(string().equalTo("http://javafx.com/javafx/11.0.1")))]]></place>
+    </injection>
+  </component>
+</project>

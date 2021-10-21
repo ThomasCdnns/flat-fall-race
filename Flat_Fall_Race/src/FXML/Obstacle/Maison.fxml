@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Maison" prefHeight="114.0" prefWidth="129.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Affichage.Defilement.Obstacle.Controller.MaisonController">
+   <children>
+      <ImageView fitHeight="134.0" fitWidth="167.0" layoutY="-1.0" preserveRatio="true">
+         <image>
+            <Image url="http://51.178.81.173/FFR/Maison.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

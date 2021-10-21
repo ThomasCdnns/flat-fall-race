@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Fond" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3200.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Affichage.Defilement.ControllerFond">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="-4.0">
+         <image>
+            <Image url="@../Images/Fond.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="796.0">
+         <image>
+            <Image url="@../Images/FondInversé.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutX="1.0" layoutY="2394.0">
+         <image>
+            <Image url="@../Images/FondInversé.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="1595.0">
+         <image>
+            <Image url="@../Images/Fond.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Flat Fall Race" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Affichage.LobbyController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="476.0" prefWidth="706.0">
+         <children>
+            <ToggleButton id="MusiqueChoixFX" layoutX="58.0" layoutY="321.0" mnemonicParsing="false" text="Musique" disable="true"/>
+            <Button fx:id="AmiBoutonFX" layoutX="486.0" layoutY="333.0" mnemonicParsing="false" onAction="#AddFriend" text="Ajouter" disable="true"/>
+            <Text layoutX="185.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salon d'avant partie">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="490.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amis">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="68.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vies">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ListView fx:id="AmisListeFX" editable="true" layoutX="445.0" layoutY="105.0" prefHeight="187.0" prefWidth="137.0" />
+            <Text layoutX="249.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joueurs">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ListView fx:id="JoueursListeFX" editable="true" layoutX="186.0" layoutY="105.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="JouerFX" layoutX="185.0" layoutY="315.0" mnemonicParsing="false" onAction="#LaunchGame" prefHeight="36.0" prefWidth="201.0" text="JOUER" disable="true"/>
+            <TextField fx:id="AmiTexteFX" layoutX="445.0" layoutY="302.0" prefHeight="25.0" prefWidth="137.0" promptText="ID ami" disable="true">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <Text layoutX="51.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Couleur">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="VertRadioFX" layoutX="45.0" layoutY="213.0" mnemonicParsing="false" onAction="#readCouleur" text="Vert" disable="true">
+               <toggleGroup>
+                  <ToggleGroup fx:id="CouleurGroupeFX" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="RoseRadioFX" layoutX="45.0" layoutY="236.0" mnemonicParsing="false" onAction="#readCouleur" text="Rose" toggleGroup="$CouleurGroupeFX" disable="true"/>
+            <RadioButton fx:id="OrangeRadioFX" layoutX="45.0" layoutY="260.0" mnemonicParsing="false" onAction="#readCouleur" text="Orange" toggleGroup="$CouleurGroupeFX" disable="true"/>
+            <RadioButton fx:id="BleuRadioFX" layoutX="45.0" layoutY="190.0" mnemonicParsing="false" onAction="#readCouleur" selected="true" text="Bleu" toggleGroup="$CouleurGroupeFX" disable="true"/>
+            <Slider fx:id="ViesFX" blockIncrement="1.0" layoutX="18.0" layoutY="105.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" onDragDetected="#getVies" onDragDone="#getVies" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" disable="true"/>
+            <Button fx:id="RefreshFX" layoutX="525.0" layoutY="19.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="25.0" prefWidth="57.0" text="Refresh" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
